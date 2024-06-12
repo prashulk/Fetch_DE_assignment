@@ -67,3 +67,15 @@ The record is: ```Error: 'ip'. Message: {'MessageId': '9bd6d21c-199a-475d-89cd-f
   <img width="1468" alt="image" src="https://github.com/prashulk/Fetch_DE_assignment/assets/67316162/450f62fa-624e-4bc0-9766-09ffc55a6f11">
 
 
+
+
+
+## Questions -
+
+**1.) How would you deploy this application in production?**
+I would start by using AWS SQS for message queuing to ensure reliable data ingestion from various sources. AWS Lambda would trigger processing upon the arrival of new messages in SQS. To handle real-time data streaming, I would leverage Amazon Kinesis or Apache Kafka, ensuring seamless data flow. For data transformation and processing, I would use Apache Spark on AWS EMR, enabling scalable and efficient data processing.
+
+Next, I would utilize Amazon S3 as a data lake to store both raw and processed data, providing a scalable storage solution. For data warehousing and analytics, Amazon Redshift would be the choice, allowing for efficient querying and analysis. To manage relational data needs, I would deploy Amazon RDS, ensuring ACID compliance and reliable SQL operations.
+
+Security and compliance are paramount, so I would use AWS IAM to manage access control, ensuring least privilege access and regular audits.
+
