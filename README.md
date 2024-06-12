@@ -47,3 +47,22 @@ Also, Python's Logging module has been used to track the issues and see if the l
 
 The record is: ```Error: 'ip'. Message: {'MessageId': '9bd6d21c-199a-475d-89cd-f5c19cb0a5e7', 'ReceiptHandle': 'NDMxNDRjN2EtMTVkMC00M2EzLTljMjEtM2Y3NWQ2NzFkNDQwIGFybjphd3M6c3FzOnVzLWVhc3QtMTowMDAwMDAwMDAwMDA6bG9naW4tcXVldWUgOWJkNmQyMWMtMTk5YS00NzVkLTg5Y2QtZjVjMTljYjBhNWU3IDE3MTgyMDY5NDIuNzg1Mjk4', 'MD5OfBody': '32365e026658d33521484837856cc808', 'Body': '{"foo": "oops_wrong_msg_type", "bar": "123"}'}```
 
+
+
+#### Logs screenshot -
+
+- While load is happening -
+
+<img width="1468" alt="image" src="https://github.com/prashulk/Fetch_DE_assignment/assets/67316162/bbdb17d9-04e8-498e-9f61-741391b3f949">
+
+
+ - Error record shown in the log -
+
+   <img width="1468" alt="image" src="https://github.com/prashulk/Fetch_DE_assignment/assets/67316162/1830dec8-962b-40c6-b84d-ba1c155beb1c">
+
+
+- One the load is complete -
+
+  <img width="1468" alt="image" src="https://github.com/prashulk/Fetch_DE_assignment/assets/67316162/450f62fa-624e-4bc0-9766-09ffc55a6f11">
+
+
