@@ -35,3 +35,15 @@ Docker container started -
 ```select count(*) from user_logins;```
 
 ```select * from user_logins limit 5;```
+
+
+
+### Error handling and data format changes -
+
+
+On observing the data format, while reading I observed that the ```app_version``` needs to be converted to ```VARCHAR``` due to it's data format. The same has been done.
+
+Also, Python's Logging module has been used to track the issues and see if the load has happened successfully or not. There is 1 issue with one of the records, as a result it has not been loaded in the table but visible in the logs (screenshot attached below) -
+
+The record is: ```Error: 'ip'. Message: {'MessageId': '9bd6d21c-199a-475d-89cd-f5c19cb0a5e7', 'ReceiptHandle': 'NDMxNDRjN2EtMTVkMC00M2EzLTljMjEtM2Y3NWQ2NzFkNDQwIGFybjphd3M6c3FzOnVzLWVhc3QtMTowMDAwMDAwMDAwMDA6bG9naW4tcXVldWUgOWJkNmQyMWMtMTk5YS00NzVkLTg5Y2QtZjVjMTljYjBhNWU3IDE3MTgyMDY5NDIuNzg1Mjk4', 'MD5OfBody': '32365e026658d33521484837856cc808', 'Body': '{"foo": "oops_wrong_msg_type", "bar": "123"}'}```
+
