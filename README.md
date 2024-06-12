@@ -93,3 +93,21 @@ Security and compliance are paramount, so I would use AWS IAM to manage access c
 
  - I would write comprehensive unit tests for individual components and functions using frameworks like pytest. In these tests, I would use mocking to simulate interactions with external services such as AWS SQS and the Postgres database, ensuring tests are isolated and repeatable. For integration testing, I would set up automated tests that validate the end-to-end data flow and processing, ensuring that all components interact correctly and data is processed as expected.
 
+
+**3.) How can this application scale with a growing dataset.**
+
+- **Horizontal Scalability:** Scale our application horizontally by adding more compute resources or leveraging container orchestration platforms like Kubernetes for dynamic resource allocation.
+
+- **Data Partitioning:** Distribute data across multiple nodes or shards to enable parallel processing, reducing load on individual nodes and improving performance.
+
+- **Distributed Data Processing:** Utilize frameworks like Apache Spark or AWS EMR for parallel processing of large datasets across a cluster, ensuring scalability and fault tolerance.
+
+- **Auto-Scaling:** Implement auto-scaling policies to adjust compute resources based on metrics like CPU utilization or message queue depth, ensuring efficient resource utilization.
+
+- **Load Balancing:** Use load balancers such as AWS Elastic Load Balancing to evenly distribute incoming traffic across multiple instances, ensuring high availability and scalability.
+
+- **Data Compression and Optimization:** Employ compression techniques and columnar storage formats to optimize query performance and reduce storage requirements.
+
+- **Data Lifecycle Management:** Implement policies for automatic data archiving or deletion based on predefined criteria to optimize storage costs and ensure relevancy of retained data.
+
+
