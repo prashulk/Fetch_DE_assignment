@@ -111,3 +111,21 @@ Security and compliance are paramount, so I would use AWS IAM to manage access c
 - **Data Lifecycle Management:** Implement policies for automatic data archiving or deletion based on predefined criteria to optimize storage costs and ensure relevancy of retained data.
 
 
+**4.) How can PII be recovered later on?**
+
+In my code, PII can be recovered later on through:
+
+- Hashed Representation: Initially, the PII data undergoes hashing using a secure hashing algorithm. The resulting hashed values are stored securely. Later, if there's a need to recover the original PII, the same hashing algorithm is applied to the known data, and the resulting hash is compared against the stored hashed value. If a match occurs, it indicates that the original data likely produced the hash.
+
+
+**5.) What are the assumptions you made?**
+
+For the sake of simplicity and limited time available to be allocated for this, below are my assumptions -
+
+- Assumed Data Format: I assumed that the data received from the AWS SQS queue follows a specific JSON format containing fields such as user_id, device_type, ip, device_id, locale, and app_version.
+
+- Predefined Database Schema: I assumed that the target Postgres database already has a predefined schema with a table named "user_logins" containing specific columns such as user_id, device_type, masked_ip, masked_device_id, locale, app_version, and create_date.
+
+- Static Configuration: I assumed static configuration values for database connection details, AWS credentials, and SQS queue information for the purpose of local development and testing.
+
+- Limited Error Handling: While error handling is implemented, I assumed a simplified error handling approach for demonstration purposes. In a production environment, error handling would be more comprehensive, covering a wider range of potential issues and providing more detailed logging and monitoring.
