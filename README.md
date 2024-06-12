@@ -81,3 +81,15 @@ Next, I would utilize Amazon S3 as a data lake to store both raw and processed d
 
 Security and compliance are paramount, so I would use AWS IAM to manage access control, ensuring least privilege access and regular audits.
 
+
+**2.) What other components would you want to add to make this production ready?**
+
+
+ - I would implement robust error handling and retry mechanisms throughout the pipeline to ensure resilience against transient failures and data processing issues.
+
+ - For automated deployment and scaling, I would set up a CI/CD pipeline using tools like Jenkins or AWS CodePipeline, enabling automated testing, deployment, and scaling of the application.
+
+ - I would also integrate AWS Glue for cataloging and managing metadata, making it easier to query and analyze data stored in the data lake. To ensure high availability and disaster recovery, I would configure cross-region replication for S3 and Redshift, along with regular backups.
+
+ - I would write comprehensive unit tests for individual components and functions using frameworks like pytest. In these tests, I would use mocking to simulate interactions with external services such as AWS SQS and the Postgres database, ensuring tests are isolated and repeatable. For integration testing, I would set up automated tests that validate the end-to-end data flow and processing, ensuring that all components interact correctly and data is processed as expected.
+
