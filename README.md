@@ -2,7 +2,9 @@
 
 ## How to run -
 
-1. Clone the git repo - ```git clone https://github.com/prashulk/Fetch_DE_assignment.git```
+First of all install ```Docker``` and ```Postgres``` (if not installed) and then follow the below steps -
+
+1. Clone the git repo - ```git clone https://github.com/prashulk/Fetch_DE_assignment.git``` and go to the directory.
    
 2. Run the docker build command - ```docker-compose build```
 
