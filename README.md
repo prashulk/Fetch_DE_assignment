@@ -7,6 +7,7 @@
 2. Run the docker build command - ```docker-compose build```
 
 3. ```docker-compose up -d```
+4. ```docker ps```
    
 
 Docker container started -
