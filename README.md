@@ -15,12 +15,12 @@ Docker container started -
 
 ## Testing the results and the logs -
 
-First of all verify if the containers are running through docker desktop - 
+ - First of all verify if the containers are running through docker desktop - 
 
 <img width="1353" alt="image" src="https://github.com/prashulk/Fetch_DE_assignment/assets/67316162/e726e7c7-119a-4e5e-8021-43bf88158019">
 
 
-Now in the terminal run the below command to enter postgres and the password is **postgres** and see the results -
+- Now in the terminal run the below command to enter postgres and the password is **postgres** and see the results -
 
 ```psql -d postgres -U postgres -p 5432 -h localhost -W```
 
@@ -30,7 +30,7 @@ Now in the terminal run the below command to enter postgres and the password is 
 <img width="1703" alt="image" src="https://github.com/prashulk/Fetch_DE_assignment/assets/67316162/cf3d0089-ac3e-4f82-803a-61662eaa49ec">
 
 
-Run the following queries, and see the above results -
+- Run the following queries, and see the above results -
 
 ```select count(*) from user_logins;```
 
