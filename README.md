@@ -129,3 +129,5 @@ For the sake of simplicity and limited time available to be allocated for this, 
 - Static Configuration: I assumed static configuration values for database connection details, AWS credentials, and SQS queue information for the purpose of local development and testing.
 
 - Limited Error Handling: While error handling is implemented, I assumed a simplified error handling approach for demonstration purposes. In a production environment, error handling would be more comprehensive, covering a wider range of potential issues and providing more detailed logging and monitoring.
+
+- Message Deletion Priority: I have deleted the error messages from the queue as a priority or tradeoff. While this ensures that bad data doesn't hinder analytics processes, a better approach would be to store the error messages in a log file for further analysis and troubleshooting, ensuring that no data is lost and providing a comprehensive audit trail.
